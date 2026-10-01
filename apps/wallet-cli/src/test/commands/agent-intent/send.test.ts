@@ -3,10 +3,10 @@ import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { YAML } from "bun";
 import { createSoftwareAgentIdentity } from "@ledgerhq/agent-intent-sdk";
-import { MockServer } from "../../helpers/mock-server";
-import { runCli } from "../../helpers/cli-runner";
-import { makeSessionDir } from "../../helpers/session-fixture";
-import { USDT_API_RESPONSE, USDT_CONTRACT } from "../../helpers/cal-fixtures";
+import { MockServer } from "../../../testing/mock-server";
+import { runCli } from "../../../testing/cli-runner";
+import { makeSessionDir } from "../../../testing/session-fixture";
+import { USDT_API_RESPONSE, USDT_CONTRACT } from "../../../testing/cal-fixtures";
 import { APP_NAME } from "../../../session/session-store";
 import { toChecksumAddress } from "../../../agent-intent/evm";
 
